@@ -1,5 +1,5 @@
-import { hashPassword } from "../../../lip/auth";
-import { connectToDatabase } from "../../../lip/db";
+import { hashPassword } from "../../../lib/auth";
+import { connectToDatabase } from "../../../lib/db";
 
 async function handler(req, res) {
   if (req.method !== "POST") {
