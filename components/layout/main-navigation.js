@@ -18,21 +18,17 @@ function MainNavigation() {
       </Link>
       <nav>
         <ul>
-          {!session && !loading && (
-            <li>
-              <Link href="/auth">Login</Link>
-            </li>
-          )}
-          {session && (
-            <li>
-              <Link href="/profile">Profile</Link>
-            </li>
-          )}
-          {session && (
-            <li>
-              <button onClick={logoutHandler}>Logout</button>
-            </li>
-          )}
+          <li>
+            <Link href="/auth">Login</Link>
+          </li>
+
+          <li>
+            <Link href="/profile">Profile</Link>
+          </li>
+
+          <li>
+            <button onClick={logoutHandler}>Logout</button>
+          </li>
         </ul>
       </nav>
     </header>
